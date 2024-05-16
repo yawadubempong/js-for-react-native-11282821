@@ -24,4 +24,24 @@ console.log(processArray(arr2));
 console.log(processArray(arr3));
 console.log(arr1);
 console.log(arr2);
-console.log(arr2);
+console.log(arr3);
+
+//Task 2 
+function formatArray(stringArr, numArr) {
+    numbers = processArray(numArr);
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2  == 0) {
+            stringArr[i] = stringArr[i].toLowerCase();
+        } else {
+            stringArr[i] = stringArr[i].toUpperCase();
+        }
+    }
+    return stringArr;
+}
+
+//Tests 
+console.log(formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,2,3,4,5]));
+console.log(formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,7,10,4,2]));
+console.log(formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,2,17,4,5]));
+
+
