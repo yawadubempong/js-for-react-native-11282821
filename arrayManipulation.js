@@ -45,3 +45,14 @@ console.log(formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,7,10,4,2]));
 console.log(formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,2,17,4,5]));
 
 
+//Task 3
+//They are exported so they can be used in userInfo.js
+let modifiedNames = formatArray(["kofi","KOJO", "Ama", "Kweku", "John"],[1,7,10,4,2]);
+let originalNames = ["kofi","KOJO", "Ama", "Kweku", "John"];
+
+module.exports = {modifiedNames, originalNames}
+
+
+
+
+
